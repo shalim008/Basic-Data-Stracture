@@ -41,6 +41,10 @@ You can assume that there will only be one closest value.
                 {
                     currentNode = currentNode.left;
                 }
+                else
+                {
+			break;
+		  }
             }
             
             return closest; 
