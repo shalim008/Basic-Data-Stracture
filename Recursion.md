@@ -21,16 +21,16 @@ Write a function that gives Factorial value of a number N. For example, the fact
  
 #### Debugging: Recursive Procedure and Base Case finding tricks - 
  
-Factorial 1 = 1                                 // If there no recursive calling found, you can consdier that as a Base Case.                      
- 
-Factorial 2 = 2 * Factorial(1) = 2
- 
-Factorial 3 = 3 * Factorial(2) = 6
- 
-Factorial 4 = 4 * Factorial(3) = 24
+👉 Factorial 1 = 1                                 // If there no recursive calling found, you can consdier that as a Base Case.           
+
+👉 Factorial 2 = 2 * Factorial(2-1) = 2
+
+👉 Factorial 3 = 3 * Factorial(3-1) = 6
+
+👉 Factorial 4 = 4 * Factorial(4-1) = 24
 
 
-</br></br></br>
+</br></br>
 
 ## Problem 2: Nth Fibonacci.
 <div class="html">
@@ -73,4 +73,19 @@ Factorial 4 = 4 * Factorial(3) = 24
             else
                 return GetNthFib(n-1) + GetNthFib(n - 2);
         }
+
+#### Debugging: Fibonacci Recursive Procedure and Base Case finding tricks - 
+
+👉 Fibonacci 1 = 0                                 // If there no recursive calling found, you can consdier that as a Base Case.    
+
+👉 Fibonacci 2 = 1
+
+👉 Fibonacci 3 = Fibonacci(3-1) + Fibonacci(3-2) = 1 + 0 = 1
+
+👉 Fibonacci 4 = Fibonacci(4-1) + Fibonacci(4-2) = 1 + 1 = 2
+
+👉 Fibonacci 5 = Fibonacci(5-1) + Fibonacci(5-2) = 2 + 1 = 3
+
+👉 Fibonacci 6 = Fibonacci(6-1) + Fibonacci(6-2) = 3 + 2 = 5
+
 
