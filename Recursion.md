@@ -1,6 +1,7 @@
-#  Recursion in C#
 
-## Problem 1: Find Factorial Value of N number.
+<h1 align="center">👋 Recursion in C# </h1>
+
+## 🧐 Problem 1: Find Factorial Value of N number.
 
 Write a function that gives Factorial value of a number N. For example, the factorial of 4 is 4×3×2×1, which is equal to 24..
 
@@ -32,7 +33,7 @@ Write a function that gives Factorial value of a number N. For example, the fact
 
 </br></br>
 
-## Problem 2: Nth Fibonacci.
+## 🧐 Problem 2: Nth Fibonacci.
 <div class="html">
 <p>
   The Fibonacci sequence is defined as follows: the first number of the sequence
