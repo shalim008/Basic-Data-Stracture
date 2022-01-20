@@ -2,9 +2,9 @@
 
 ## Problem 1: Find Factorial Value of N number.
 
-Write a function that gives Factorial of a number 'n'. For example, the factorial of 4 is 4×3×2×1, which is equal to 24..
+Write a function that gives Factorial value of a number N. For example, the factorial of 4 is 4×3×2×1, which is equal to 24..
 
-#### Sample Input: 4
+#### Sample Input:   4
 #### Sample Output: 24
 
 ## Solution: 
