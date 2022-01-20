@@ -1,4 +1,4 @@
-# Data Stracture - Recursion in C#
+#  Recursion in C#
 
 ## Problem 1: Find Factorial Value of N number.
 
@@ -7,7 +7,7 @@ Write a function that gives Factorial value of a number N. For example, the fact
 #### Sample Input:   4
 #### Sample Output: 24
 
-## Solution: 
+#### Solution: 
 
 
         public static int Factorial(int n)
@@ -19,7 +19,7 @@ Write a function that gives Factorial value of a number N. For example, the fact
         }
         
  
-### Debugging: Recursive Procedure and Base Case finding tricks - 
+#### Debugging: Recursive Procedure and Base Case finding tricks - 
  
 Factorial 1 = 1                                 // If there no recursive calling found, you can consdier that as a Base Case.                      
  
@@ -28,6 +28,49 @@ Factorial 2 = 2 * Factorial(1) = 2
 Factorial 3 = 3 * Factorial(2) = 6
  
 Factorial 4 = 4 * Factorial(3) = 24
- 
 
- 
+
+</br></br></br>
+
+## Problem 2: Nth Fibonacci.
+<div class="html">
+<p>
+  The Fibonacci sequence is defined as follows: the first number of the sequence
+  is <span>0</span>, the second number is <span>1</span>, and the nth number is the sum of the (n - 1)th
+  and (n - 2)th numbers. Write a function that takes in an integer
+  <span>n</span> and returns the nth Fibonacci number.
+</p>
+<p>
+  Important note: the Fibonacci sequence is often defined with its first two
+  numbers as <span>F0 = 0</span> and <span>F1 = 1</span>. For the purpose of
+  this question, the first Fibonacci number is <span>F0</span>; therefore,
+  <span>getNthFib(1)</span> is equal to <span>F0</span>, <span>getNthFib(2)</span>
+  is equal to <span>F1</span>, etc..
+</p>
+<h3>Sample Input #1</h3>
+<pre><span class="CodeEditor-promptParameter">n</span> = 2
+</pre>
+<h3>Sample Output #1</h3>
+<pre>1 <span class="CodeEditor-promptComment">// 0, 1</span>
+</pre>
+<h3>Sample Input #2</h3>
+<pre><span class="CodeEditor-promptParameter">n</span> = 6
+</pre>
+<h3>Sample Output #2</h3>
+<pre>5 <span class="CodeEditor-promptComment">// 0, 1, 1, 2, 3, 5</span>
+</pre>
+</div>
+
+#### Solution: O(2^n) time | O(n) space
+
+        
+        public static int GetNthFib(int n)
+        {            
+            if (n == 2)
+                return 1;
+            else if (n == 1)
+                return 0;
+            else
+                return GetNthFib(n-1) + GetNthFib(n - 2);
+        }
+
