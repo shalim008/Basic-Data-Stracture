@@ -19,9 +19,9 @@ Write a function that gives Factorial of a number 'n'. For example, the factoria
         }
         
  
-### Recursive Procedure and Base Case finding tricks - 
+### Debugging: Recursive Procedure and Base Case finding tricks - 
  
-Factorial 1 = 1   // If there no recursive calling found, you can consdier that as a Base Case.                      
+Factorial 1 = 1                                 // If there no recursive calling found, you can consdier that as a Base Case.                      
  
 Factorial 2 = 2 * Factorial(1) = 2
  
