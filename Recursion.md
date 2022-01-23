@@ -145,26 +145,31 @@ Write a function that gives Factorial value of a number N. For example, the fact
 			    },
 		    };
            
-          int d=  ProductSums(test,1);
+          int d=  ProductSums(test);
           Console.WriteLine(d);
         }
 
-        public int ProductSums(List<object> array, int multiplier)
-        {           
+        public int ProductSums(List<object> array)
+        {
+            return ProductSumHelper(array,1);         
+        }
+
+        private int ProductSumHelper(List<object> array, int multiplier)
+        {
             int sum = 0;
-           
+
             foreach (var item in array)
             {
                 if (item is List<object>)
-                {                  
-                    sum += ProductSums((List<object>)item, multiplier + 1);
+                {
+                    sum += ProductSumHelper((List<object>)item, multiplier + 1);
                 }
                 else
                 {
                     sum += (int)item;
-                }              
-            }
-            return sum*multiplier;
-        }
+                }
 
+            }
+            return sum * multiplier;
+        }
 
