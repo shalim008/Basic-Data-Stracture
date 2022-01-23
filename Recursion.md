@@ -126,6 +126,45 @@ Write a function that gives Factorial value of a number N. For example, the fact
 #### Solution: O(N) time | O(D) space
 
 
-#### Debugging: Fibonacci Recursive Procedure and Base Case finding tricks - 
+        public  void TestCase1()
+        {
+            List<object> test = new List<object>()
+            {
+			    5,
+			    2,
+			    new List<object>(){
+				    7, -1
+			    },
+			    3,
+			    new List<object>(){
+				    6,
+				    new List<object>(){
+					    -13, 8
+				    },
+				    4,
+			    },
+		    };
+           
+          int d=  ProductSums(test,1);
+          Console.WriteLine(d);
+        }
+
+        public int ProductSums(List<object> array, int multiplier)
+        {           
+            int sum = 0;
+           
+            foreach (var item in array)
+            {
+                if (item is List<object>)
+                {                  
+                    sum += ProductSums((List<object>)item, multiplier + 1);
+                }
+                else
+                {
+                    sum += (int)item;
+                }              
+            }
+            return sum*multiplier;
+        }
 
 
