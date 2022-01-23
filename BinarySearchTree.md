@@ -125,4 +125,24 @@ To create a tree -
 </pre>
 </div>
 
+## Solution: 
 O(n) time | O(n) space - where n is the number of nodes in the Binary Tree
+
+
+ 	public static void CalculateBracnchSum(BST tree, int runningSum, List<int> sums)
+        {
+            if (tree == null)
+            {
+                return;
+            }
+
+            runningSum = runningSum + tree.value;
+            if (tree.left == null && tree.right == null)
+            {
+                sums.Add(runningSum);
+            }
+
+            CalculateBracnchSum(tree.left, runningSum, sums);
+            CalculateBracnchSum(tree.right, runningSum, sums);
+
+        }
