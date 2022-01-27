@@ -1,7 +1,54 @@
 
 <h1 align="center">👋 Recursion in C# </h1>
 
-## 🧐 Problem 1: Find Factorial Value of N number.
+## 🧐 Problem 2: What will be the output of in below code.
+
+#### Solution: 
+
+	 static void Main(string[] args)
+         {
+            FunRec(3);
+	 }
+	 
+        private static void FunRec(int p)
+        {
+            if (p == 0)
+                return;
+            p--;
+            Console.WriteLine(p);
+            FunRec(p);
+            Console.WriteLine(p);
+        }
+	
+If you can find the output, you are good to go next step. Otherwise please go through “How recursion works?” 
+
+
+#### Debugging: Recursive - 
+
+Step 1:
+
+👉  3 = 3-1 = 2
+
+👉  2 = 2-1 = 1
+
+👉  1 = 1-1 = 0
+
+Step 2: If we reached Base Case, system will start returning value recursively. So the out put value should looks like - 
+
+2
+1
+0
+0
+1
+2
+
+
+</br></br>
+
+
+
+
+## 🧐 Problem 2: Find Factorial Value of N number.
 
 Write a function that gives Factorial value of a number N. For example, the factorial of 4 is 4×3×2×1, which is equal to 24..
 
@@ -33,7 +80,7 @@ Write a function that gives Factorial value of a number N. For example, the fact
 
 </br></br>
 
-## 🧐 Problem 2: Find Nth Fibonacci.
+## 🧐 Problem 3: Find Nth Fibonacci.
 <div class="html">
 <p>
   The Fibonacci sequence is defined as follows: the first number of the sequence
@@ -93,7 +140,7 @@ Write a function that gives Factorial value of a number N. For example, the fact
 </br>
 </br>
 
-## 🧐 Problem 3: Product Sum.
+## 🧐 Problem 4: Product Sum.
 <div class="html">
 <p>
   Write a function that takes in a "special" array and returns its product sum.
