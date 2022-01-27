@@ -1,7 +1,7 @@
 
 <h1 align="center">👋 Recursion in C# </h1>
 
-## 🧐 Problem 2: What will be the output of in below code.
+## 🧐 Problem 1: What will be the output of in below code.
 
 #### Solution: 
 
