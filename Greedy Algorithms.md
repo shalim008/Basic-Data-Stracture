@@ -51,5 +51,5 @@
                 temp = queries[i];
             }
      
-						return totalWaitingTime;
-	      }
+		return totalWaitingTime;
+	 }
